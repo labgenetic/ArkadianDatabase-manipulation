@@ -2,8 +2,7 @@ const express = require("express");
 const { MongoClient } = require("mongodb");
 require('dotenv').config();
 
-const uri =
-  `mongodb+srv://admin:${pass}@testdb.3qrnttg.mongodb.net/?retryWrites=true&w=majority`;
+const uri = process.env.URI
 
 const pass = process.env.DATABASE_PASS
 
